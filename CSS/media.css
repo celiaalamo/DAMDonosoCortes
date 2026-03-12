@@ -158,15 +158,11 @@
 }
 
 @media (min-device-width : 1400px) and (max-device-width : 1489px) {
-  body {
-    background: rgb(135, 48, 48);
-  }
+ 
 }
 
 @media (min-device-width : 1499px) and (max-width: 1500px) {
-  body {
-    background: red;
-  }
+  
 
   .infoDan {
     padding: 4%;
@@ -210,9 +206,7 @@
 **************************************************************************/
 
 @media (min-device-width : 993px) and (max-device-width : 1020px) {
-  body {
-    background: rgb(135, 48, 48);
-  }
+  
 }
 
 /***********************************************************************
@@ -397,9 +391,7 @@
 **************************************************************************/
 
 @media (min-device-width : 701px) and (max-device-width : 800px) {
-  body {
-    background-color: rgb(253, 253, 253);
-  }
+ 
 
   .nav {
     opacity: 0.5;
@@ -552,9 +544,6 @@
  *                                      400px-700px            
 **************************************************************************/
 @media (min-device-width : 400px) and (max-device-width : 700px) {
-  body {
-    background-color: rgb(253, 253, 253);
-  }
 
   .nav {
     opacity: 0.5;
