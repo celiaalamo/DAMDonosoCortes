@@ -198,9 +198,11 @@
 ***************************************************************************/
 
 @media (min-device-width : 1024px) and (max-device-width : 1300px) {
-  body {
-    background: rgb(131, 48, 135);
-  }
+   .infoDan {
+    padding: 4%;
+    text-align: justify;
+    font-size: 17pt !important;
+}
 }
 
 /***********************************************************************
