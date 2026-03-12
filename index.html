@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Proyecto 1DAM</title>
+		<!-- El boostra se a usado para que haga	la funcion	de	icono abrir y cerrar en responsive del menu -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link rel="stylesheet" href="./CSS/media.css" />
+
+		
+	</head>
+
+	<body>
+		<!--  MENU -->
+		<section class="Menu">
+			<button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+			<nav id="nav" class="nav">
+				<button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+				<ul class="nav-list">
+					<li><a href="index.html">Inicio</a></li>
+					<li>
+						<a href="">Información</a>
+						<ul>
+							<li><a href="#informacion">¿Qué es DAM?</a></li>
+							<li><a href="#modulos">Módulos</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Centro</a>
+						<ul>
+							<li>
+								<a
+									href="https://iesdonosocortes.educarex.es/index.php"
+									target="_blank"
+									>IES Donoso Cortes</a
+								>
+							</li>
+							<li><a href="#profesores">Profesores</a></li>
+							<li><a href="#ciclosRelacionados">Ciclos Relacionados</a></li>
+						</ul>
+					</li>
+					<!--	-->
+					<img class="logo" src="./IMG/Logo/Logo.svg" alt="Logo DAM" />
+					<!--	-->
+					<li>
+						<a href="#juegos">Proyectos</a>
+						<ul>
+							<li>
+								<a href="#Njuegos">Nuestros Juegos</a>
+								<ul>
+									<li>
+										<a href="Juegos/serpiente/index.html" target="_blank"
+											>Serpiente</a
+										>
+									</li>
+									<li><a href="Juegos/Ahorcado/index.html">El ahorcado</a></li>
+									<li><a href="">Encuentra las parejas</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#juegosAprendizaje">Juegos de Aprendizaje</a>
+								<ul>
+									<li>
+										<a href="https://cssgridgarden.com/#es" target="_blank"
+											>Grid Garden</a
+										>
+									</li>
+									<li>
+										<a href="http://flexboxfroggy.com/#es" target="_blank"
+											>Flexbox Froggy</a
+										>
+									</li>
+									<li>
+										<a href="https://cssgridgarden.com/#es" target="_blank"
+											>Grid Garden</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a
+									href="https://sites.google.com/iesdonosocortes.es/ladata/page?authuser=0"
+									target="_blank"
+									>LaData</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#opiniones">Opiniones</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+        <!-- imagen de fondo con DAM -->
+			<section class="FondoInicio">
+				<div class="contenido">
+					<img class="damfondo" src="./IMG/Logo/Logo.svg" alt="Fonfo inicio" />
+					<h2>Desarrollo de Aplicaciones Multiplataforma</h2>
+				</div>
+			</section>
+		</section>
+
+		<!-- INFORMACIÓN -->
+		<section id="informacion">
+			<h2 class="titu">Información</h2>
+			<div class="infocontenido">
+				<p class="infoDan">
+					DAM son las siglas de Desarrollo de Aplicaciones Multiplataforma, un
+					Ciclo Formativo de Grado Superior este título consiste en desarrollar,
+					implantar, documentar y mantener aplicaciones informáticas
+					multiplataforma, utilizando tecnologías y entornos de desarrollo
+					específicos, garantizando el acceso a los datos de forma segura y
+					cumpliendo los criterios de «usabilidad» y calidad exigidas en los
+					estándares establecidos.
+				</p>
+				<img src="./IMG/inicio.png" alt="" />
+			</div>
+		</section>
+
+		<!-- MÓDULOS -->
+		<section id="modulos" class="modulos-container">
+			<h2 class="titu">Módulos</h2>
+
+			<div class="columnas-años">
+				<div class="columna">
+					<h3 class="titulo-año">1º Año</h3>
+					<div class="division">
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#bd" class="portfolio-link">
+								<img
+									src="./IMG/modulos/mobd.png"
+									alt="BD"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Base de Datos</h3></div>
+							</a>
+						</div>
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#sistema" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modsistema.png"
+									alt="Sistema"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Sistema Informático</h3></div>
+							</a>
+						</div>
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#programacion" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modprogra.png"
+									alt="Programacion"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Programación</h3></div>
+							</a>
+						</div>
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#ingles" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modIngles.png"
+									alt="ingles"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Inglés</h3></div>
+							</a>
+						</div>
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#lenguaje" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modlenguaje.png"
+									alt="lenguaje"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>lenguajes de Marcas</h3></div>
+							</a>
+						</div>
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#entorno" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modentorno.png"
+									alt="Entorno"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Entorno</h3></div>
+							</a>
+						</div>
+						<!--	-->
+						<div class="partemodulos">
+							<a href="modulos.html#ip" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modip.png"
+									alt="Módulo 2"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>IP</h3></div>
+							</a>
+						</div>
+						<!--	-->
+					
+					</div>
+				</div>
+
+				<div class="columna">
+					<h3 class="titulo-año">2º Año</h3>
+					<div class="division">
+						<div class="partemodulos">
+							<a href="modulodos.html#assce" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modaccesoBase.png"
+									alt="Módulo 3"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Acceso a Datos</h3></div>
+							</a>
+						</div>
+						<div class="partemodulos">
+							<a href="modulodos.html#DI" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modinterface.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>Desarrollo de Interfaces</h3></div>
+							</a>
+						</div>
+						<div class="partemodulos">
+							<a href="modulodos.html#IPEI" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modip.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip"><h3>IPE II</h3></div>
+							</a>
+						</div>
+						<div class="partemodulos">
+							<a href="modulodos.html#PSP" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modproser.png"
+									alt="Módulo 3"
+									class="portfolio-img"
+								/>
+								<div class="modescrip">
+									<h3>Programación de Servicios y Procesos</h3>
+								</div>
+							</a>
+						</div>
+						<div class="partemodulos">
+							<a href="modulodos.html#PMD" class="portfolio-link">
+								<img
+									src="./IMG/modulos/modmovil.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip">
+									<h3>Programación Multimedia y Dispositivos Móviles</h3>
+								</div>
+							</a>
+						</div>
+						<div class="partemodulos">
+							<a href="modulodos.html#SG" class="portfolio-link">
+								<img
+									src="./IMG/modulos/mdgem.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip">
+									<h3>Sistemas de Gestión Empresarial Proyecto Intermodular</h3>
+								</div>
+							</a>
+						</div>
+						<!--  -->
+                        <div class="partemodulos">
+							<a href="modulodos.html#PID" class="portfolio-link">
+								<img
+									src="./IMG/modulos/mdgem.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip">
+									<h3>Proyecto intermodular de desarrollo de aplicaciones multiplataforma</h3>
+								</div>
+							</a>
+						</div>
+                        <!--  -->
+						<!--  -->
+                        <div class="partemodulos">
+							<a href="modulodos.html#SAS" class="portfolio-link">
+								<img
+									src="./IMG/modulos/mdgem.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip">
+									<h3>Sostenibilidad aplicada al sistema productivo</h3>
+								</div>
+							</a>
+						</div>
+                        <!--  -->
+						<!--  -->
+                        <div class="partemodulos">
+							<a href="modulodos.html#IAS" class="portfolio-link">
+								<img
+									src="./IMG/modulos/mdgem.png"
+									alt="Módulo 4"
+									class="portfolio-img"
+								/>
+								<div class="modescrip">
+									<h3>Digitalización  aplicada a los sectores productivos</h3>
+								</div>
+							</a>
+						</div>
+                        <!--  -->
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Ciclos Relacionados -->
+		<section id="ciclosRelacionados">
+			<h2 class="titu">Ciclos Relacionados</h2>
+			<!-- --------- -->
+			<div class="ciclosRelacionados">
+				<!--  -->
+				<div class="FP">
+					<div class="inverticarta">
+						<div class="frontal">
+							<h2 class="tituloCiclo">FPB</h2>
+							<img src="./IMG/istockphoto-1286642964-1024x1024.jpg" alt="FPB" />
+							<h3>Grado Básico</h3>
+						</div>
+						<div class="travesal">
+							<h2 class="tituloCiclo">Informática y Comunicaciones</h2>
+
+							<p>
+								- Ayudante de montador / montadora de antenas receptoras/
+								televisión / satélites <br />
+								- Ayudante de instalador-reparador / instaladora-reparadora de
+								equipos telefónicos y telegráficos. <br />
+								- Ayudante de instalador / instaladora de equipos y sistemas de
+								comunicación. <br />
+								- Ayudante de instalador-reparador / instaladora-reparadora de
+								instalaciones telefónicas.
+								<br />
+								- Ayudante de montador / montadora de sistemas
+								microinformáticos. <br />
+								- Ayudante de mantenimiento de sistemas informáticos. <br />
+								- Ayudante de instalador / instaladora de sistemas informáticos.
+								<br />
+								- Ayudante de instalador / instaladora de sistemas para
+								transmisión de datos. <br />
+							</p>
+						</div>
+					</div>
+				</div>
+				<!--  -->
+				<div class="FP1">
+					<div class="inverticarta">
+						<div class="frontal">
+							<h2 class="tituloCiclo">FPGM</h2>
+							<img src="./IMG/istockphoto-1286642964-1024x1024.jpg" alt="FPB" />
+							<h3>Grado Medio</h3>
+						</div>
+						<div class="travesal">
+							<h2 class="tituloCiclo">Técnico en Sistemas Microinformáticos y Redes</h2>
+
+							<p>
+								Instalador-reparador / instaladora-reparadora de equipos
+								informáticos. <br />
+								Técnica / técnico de soporte informático. <br />
+								Técnica / técnico de redes de datos. <br />
+								Reparador / reparadora de periféricos de sistemas
+								microinformáticos. <br />
+								Comercial de microinformática. <br />
+								Operador / operadora de tele-asistencia. <br />
+								Operador / operadora de sistemas. <br />
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="FP2">
+					<div class="inverticarta">
+						<div class="frontal">
+							<h2 class="tituloCiclo">FPGS</h2>
+							<img src="./IMG/istockphoto-1286642964-1024x1024.jpg" alt="FPB" />
+							<h3>Grado Superior</h3>
+						</div>
+						<div class="travesal">
+						
+							<h2 class="tituloCiclo">Informática y Comunicaciones</h2>
+							<p>Ayudante de montador/montadora de antenas <br />
+								ayudante de instalador <br />
+								ayudante de instalador de equipos y sistema de comunicación</p>
+							
+							<h2 class="tituloCiclo">DAW</h2>
+							<p>Programador/a Web. <br />
+								Programador/a Multimedia. <br />
+								Desarrollador/a de aplicaciones en entornos Web.</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ----------- -->
+		</section>
+
+		<!-- PROFESORES -->
+		<section id="profesores">
+			<h2 class="titu">Profesorado</h2>
+
+			<div class="profes">
+				<ul>
+					<li>
+						<img src="./IMG/Eva.png" alt="Eva" />
+						<p>Eva</p>
+					</li>
+					<li>
+						<img src="./IMG/Encarna.png" alt="Encarna" />
+						<p>Encarna</p>
+					</li>
+					<li>
+						<img src="./IMG/convierte el retrato.png" alt="María" />
+						<p>María</p>
+					</li>
+					<li>
+						<img src="./IMG/saul.png" alt="Saul" />
+						<p>Saul</p>
+					</li>
+					<li>
+						<img src="./IMG/Amalia.png" alt="Amalia" />
+						<p>Amalia</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- JUEGOS -->
+		<section id="juegos">
+			<section id="Njuegos">
+				<h2 class="titu">Nuestros Juegos</h2>
+				<div class="claseJuegos">
+					<div class="juego">
+						<h3>Serpiente</h3>
+						<img src="./IMG/PNG/Serpiente.png" alt="Juego de la Serpiente" />
+						<p>
+							Controla la serpiente, come puntos y evita chocar contigo misma.
+						</p>
+						<button>
+							<a href="./Juegos/serpiente/index.html" target="_blank">Jugar</a>
+						</button>
+					</div>
+
+					<div class="juego">
+						<h3 >El Ahorcado</h3>
+						<img
+							src="./IMG/JPG/WhatsApp Image 2026-02-09 at 19.32.45.jpeg"
+							alt="Juego del Ahorcado"
+						/>
+						<p>Adivina la palabra antes de que el muñeco sea completado.</p>
+						<button>
+							<a href="./Juegos/ahorcado/index.html" target="_blank">Jugar</a>
+						</button>
+					</div>
+				</div>
+			</section>
+		</section>
+
+		<!-- JUEGOS Y PROYECTOS -->
+
+		<section id="juegosAprendizaje">
+			<h2 class="titu">Juegos de Aprendizaje</h2>
+			<div class="claseJuegos">
+				<div class="juego">
+					<h3>Flexbox Froggy</h3>
+					<img
+						src="./IMG/PNG/Captura de pantalla 2026-02-09 195508.png"
+						alt="JFlexbox Froggy"
+					/>
+					<p>
+						Ayuda a Froggy y a sus amigos a llegar a sus hojas de lirio usando
+						CSS.
+					</p>
+					<button>
+						<a href="http://flexboxfroggy.com/#es" target="_blank">Jugar</a>
+					</button>
+				</div>
+
+				<div class="juego">
+					<h3>Grid Garden</h3>
+					<img src="./IMG/PNG/gridGarden.png" alt="Juego del Ahorcado" />
+					<p>Adivina la palabra antes de que el muñeco sea completado.</p>
+					<button>
+						<a href="https://cssgridgarden.com/#es" target="_blank">Jugar</a>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<!-- OPINIONES -->
+		<section id="opiniones">
+			<h2 class="titu">Opiniones</h2>
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+					<!-- Reseña 1 -->
+					<div class="swiper-slide">
+						<div class="google-review">
+							<div class="review-header">
+								<img
+									src="./IMG/PNG/Leo_CHIBI.png"
+									alt="Usuario"
+									class="review-avatar"
+								/>
+								<div>
+									<span class="review-author">Leo Ivette</span>
+									<div class="review-stars">★★★★★</div>
+									<span class="review-date">Hace 2 semanas</span>
+								</div>
+							</div>
+							<div class="review-title">Excelente atención</div>
+							<div class="review-text">
+								Muy buena experiencia, servicio rápido y amable.
+							</div>
+						</div>
+					</div>
+
+					<!-- Reseña 2 -->
+					<div class="swiper-slide">
+						<div class="google-review">
+							<div class="review-header">
+								<img
+									src="./IMG/PNG/Foto_INA_CHIBI.png"
+									alt="Usuario"
+									class="review-avatar"
+								/>
+								<div>
+									<span class="review-author">Ina Diaz</span>
+									<div class="review-stars">★★★★☆</div>
+									<span class="review-date">Hace 1 semana</span>
+								</div>
+							</div>
+							<div class="review-title">Recomendable</div>
+							<div class="review-text">
+								Me resolvieron todo correctamente. Volveré.
+							</div>
+						</div>
+					</div>
+
+					<!-- Reseña 3 -->
+					<div class="swiper-slide">
+						<div class="google-review">
+							<div class="review-header">
+								<img
+									src="./IMG/PNG/Celia_CHIBI.png"
+									alt="Usuario"
+									class="review-avatar"
+								/>
+								<div>
+									<span class="review-author">Celia Álamo</span>
+									<div class="review-stars">★★★★☆</div>
+									<span class="review-date">Hace 1 mes</span>
+								</div>
+							</div>
+							<div class="review-title">Recomendable</div>
+							<div class="review-text">
+								Me resolvieron todo correctamente. Volveré.
+							</div>
+						</div>
+					</div>
+
+					<!-- Reseña 4 -->
+					<div class="swiper-slide">
+						<div class="google-review">
+							<div class="review-header">
+								<img
+									src="https://randomuser.me/api/portraits/women/2.jpg"
+									alt="Usuario"
+									class="review-avatar"
+								/>
+								<div>
+									<span class="review-author">María García</span>
+									<div class="review-stars">★★★★☆</div>
+									<span class="review-date">Hace 1 mes</span>
+								</div>
+							</div>
+							<div class="review-title">Recomendable</div>
+							<div class="review-text">
+								Me resolvieron todo correctamente. Volveré.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTACTO Y LOCALIZACION -->
+		<section id="contacto">
+			<h2 class="titu">CONTACTO Y LOCALIZACION</h2>
+			<div class="contacto-flex">
+				<div class="col-izquierda">
+					<h4 class="Contacto">Contacto</h4>
+
+					<form class="formulario">
+						<label>Nombre</label>
+						<input type="text" />
+
+						<label>Asunto</label>
+						<input type="text" />
+
+						<label>Mensaje</label>
+						<textarea></textarea>
+
+						<button type="submit">Enviar</button>
+					</form>
+				</div>
+				<div class="mapa">
+					<h4 class="Contacto">Localización</h4>
+					<p class="plocal"><strong>Dirección:</strong> Don Benito</p>
+					<p class="plocal"><strong>Instituto:</strong> Donoso Cortés</p>
+
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.3389555602475!2d-5.86949272365249!3d38.961927642893436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd145b0335e1715b%3A0x485f02fe56f2d511!2sIES%20Donoso%20Cort%C3%A9s!5e0!3m2!1ses!2ses!4v1770579517677!5m2!1ses!2ses"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					>
+					</iframe>
+				</div>
+			</div>
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+			<div>
+				<p>
+					Copyright : Celia Álamo Calle | Ina Díaz Álvarez | Leonarda Ivette
+					Martínez
+				</p>
+				<p>Proyecto 1º DAM Feval y Lenguaje de Marcas</p>
+			</div>
+		</footer>
+
+		<!-- Javascrip -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+		<script src="script.js"></script>
+
+	</body>
+</html>

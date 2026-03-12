@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Serpiente</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="serpiente.css">
+</head>
+
+<body>
+   	<!--  MENU -->
+		<section class="Menu">
+			<button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+			<nav id="nav" class="nav">
+				<button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+				<ul class="nav-list">
+					<li><a href="index.html">Inicio</a></li>
+					<li>
+						<a href="">Información</a>
+						<ul>
+							<li><a href="#informacion">¿Qué es DAM?</a></li>
+							<li><a href="#modulos">Módulos</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">Centro</a>
+						<ul>
+							<li>
+								<a
+									href="https://iesdonosocortes.educarex.es/index.php"
+									target="_blank"
+									>IES Donoso Cortes</a
+								>
+							</li>
+							<li><a href="#profesores">Profesores</a></li>
+							<li><a href="#ciclosRelacionados">Ciclos Relacionados</a></li>
+						</ul>
+					</li>
+					<!--	-->
+					<img class="logo" src="./../../IMG/Logo/Logo.svg" alt="Logo DAM" />
+					<!--	-->
+					<li>
+						<a href="#juegos">Proyectos</a>
+						<ul>
+							<li>
+								<a href="#Njuegos">Nuestros Juegos</a>
+								<ul>
+									<li>
+										<a href="Juegos/serpiente/index.html" target="_blank"
+											>Serpiente</a
+										>
+									</li>
+									<li><a href="./../../Juegos/Ahorcado/index.html">El ahorcado</a></li>
+									<li><a href="">Encuentra las parejas</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#juegosAprendizaje">Juegos de Aprendizaje</a>
+								<ul>
+									<li>
+										<a href="https://cssgridgarden.com/#es" target="_blank"
+											>Grid Garden</a
+										>
+									</li>
+									<li>
+										<a href="http://flexboxfroggy.com/#es" target="_blank"
+											>Flexbox Froggy</a
+										>
+									</li>
+									<li>
+										<a href="https://cssgridgarden.com/#es" target="_blank"
+											>Grid Garden</a
+										>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a
+									href="https://sites.google.com/iesdonosocortes.es/ladata/page?authuser=0"
+									target="_blank"
+									>LaData</a
+								>
+							</li>
+						</ul>
+					</li>
+					<li><a href="#opiniones">Opiniones</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+        
+		</section>
+    
+    <br>
+
+    <section class="container">
+        <canvas id="Area"></canvas>
+        <article>
+            <h1>Juego Serpiente</h1>
+            <div id="marcador" style="display: none;">Puntos: 0</div>
+             <div id="marcador2" >Puntos: 0</div>
+            <h1>Objetivo</h1>
+            <p>Fifo tiene hambre, tu objetivo es comer la manzana que aparece y conseguir puntos.
+                <strong>!Cuidado¡</strong> no te comas tu propia cola. Tambien puedes  jugar con Robin, el amigo de Fifo</p>
+            <h1>Controles</h1>
+            <p>
+                <b>Jugador 1:</b> Usa las teclas "W""A""S""D" para moverter por el mapa <br>
+                <b>Jugador 2:</b> Flechas de dirección para moverte en  el mapa
+            </p>
+        </article>
+    </section>
+
+    <section id="menu">
+        <h1 id="mensajes">FIFO TIENE HAMBRE AYUDALE</h1>
+        <h3>¿Qué deseas hacer?</h3>
+        <button id="btnSolo">Jugar solo</button>
+        <button id="btnDuo">Jugar con un amigo</button>
+        <button><a href="../../index.html">Salir</a></button>
+    </section>
+
+   <script src="funciones.js"></script>
+</body>
+
+</html>

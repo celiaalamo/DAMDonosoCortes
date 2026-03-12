@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado Retro</title>
+
+    <!-- Fuente y estilos propios del juego -->
+    <link href="https://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet">
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Scripts del juego -->
+    <script type="text/javascript" src="palabras.js" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+
+  
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="Menu">
+        <nav>
+            <ul>
+                <li><a href="../../index.html#inicio">Inicio</a></li>
+                <li><a href="">Información</a>
+                    <ul>
+                        <li><a href="../../index.html#informacion">¿Qué es DAM?</a></li>
+                        <li><a href="../../index.html#profesores">Profesores</a></li>
+                        <li><a href="../../index.html#modulos">Módulos</a></li>
+                        <li><a href="../../index.html#ciclosRelacionados">Ciclos Relacionados</a></li>
+                    </ul>
+                </li>
+                <li><img src="../../IMG/PNG/DAM_While.png" alt="Logo DAM"></li>
+                <li><a href="../../index.html#juegos">Proyectos</a>
+                    <ul>
+                        <li><a href="../../index.html#Njuegos">Nuestros Juegos</a>
+                            <ul>
+                                <li><a href="../serpiente/index.html" target="_blank">Serpiente</a></li>
+                                <li><a href="">El ahorcado</a></li>
+                                <li><a href="">Encuentra las parejas</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../../index.html#juegosAprendizaje">Juegos de Aprendizaje</a>
+                            <ul>
+                                <li><a href="https://cssgridgarden.com/#es" target="_blank">Grid Garden</a></li>
+                                <li><a href="http://flexboxfroggy.com/#es" target="_blank">Flexbox Froggy</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://sites.google.com/iesdonosocortes.es/ladata/page?authuser=0" target="_blank">LaData</a></li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html#opiniones">Opiniones</a></li>
+                <li><a href="../../index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <section class="container">
+
+        <!-- LADO IZQUIERDO: EL JUEGO -->
+       
+        <section class="ahorcado">
+             <div id="menu">
+                <h1 id="mensajes">¿LISTO PARA JUGAR AL AHORCADO?</h1>
+                <h3>Selecciona una opción</h3>
+
+                <button id="btnJugar">Jugar</button>
+                <button><a href="../../index.html">Salir</a></button>
+            </div>
+            <div class="row">
+                <div class="title-box">
+                    <h1>Ahorcado Retro</h1>
+                </div>
+                <a id="exitAction" title="Salir">X</a>
+            </div>
+
+            <div class="game-container">
+                <img class="vaquero" src="vaquero.png" alt="Dibujo de un vaquero"/>
+                <canvas id="canvas"></canvas>
+            </div>
+
+            <div id="wordContainer"></div>
+
+            <div class="used-letters-container">
+                <p>LETRAS UTILIZADAS:</p>
+                <div id="usedLetters"></div>
+            </div>
+
+            <div id="buttonsContainer">
+                <button id="startButton">START</button>
+                <button id="helpButton" style="display:none;">❤️❤️❤️</button>
+            </div>
+            <div>
+
+                <p id="gameMessage"></p>
+                <p id="scoreDisplay">Puntuación: 0</p>
+            </div>
+        </section>
+
+        <!-- LADO DERECHO: INFORMACIÓN -->
+        <article id="rules">
+            <h1>Juego del Ahorcado</h1>
+
+            <h2>Objetivo</h2>
+            <p>Adivina la palabra antes de que Isaac 🤠 sea ahorcado.</p>
+            <p>Cada error dibuja una parte del cuerpo.</p>
+
+            <h2>Controles</h2>
+            <p>
+                <b>Teclado:</b> Introduce letras para intentar adivinar la palabra.
+            </p>
+            <p>
+                <b>START:</b> Comienza una nueva partida.
+            </p>
+            <p>
+                <b>❤️:</b> Ayuda: Te da una letra pero te resta 2 puntos cada que la usas.
+            </p>
+        </article>
+
+    </section>
+ 
+   
+
+    <!-- SCRIPT PARA OCULTAR EL MENÚ -->
+    <script>
+        document.getElementById("btnJugar").addEventListener("click", () => {
+            document.getElementById("menu").style.display = "none";
+        });
+    </script>
+
+</body>
+
+</html>

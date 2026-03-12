@@ -1,0 +1,60 @@
+    nav, .navbar, .header { 
+    position: relative;
+    z-index: 100; 
+}
+    
+    .container {
+            display: flex;
+            gap: 50px
+        }
+
+        #menu {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 985px;
+            height: 550px;
+            background: rgba(27, 28, 48, 0.95);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 10px;
+          margin: 6% 0% 0% 0%;
+            z-index: 10;
+        }
+
+        #mensajes {
+            color: #FEBA39;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        #menu button {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background: #FEBA39;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 250px;
+        }
+
+        #menu button a {
+            text-decoration: none;
+            color: #1B1C30;
+            display: block;
+        }
+          #menu button:hover {
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            background: #819e0b;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 250px;
+        }

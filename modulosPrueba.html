@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Proyecto 1DAM - Módulos</title>
+    <style>
+        /* --- ESTILOS BASE --- */
+        body {
+            background-color: #802d7d; /* Color de fondo de tu imagen */
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* --- CONTENEDOR MÁGICO (GRID) --- */
+        .contenedor-modulos {
+            display: grid;
+            /* Definimos 7 columnas para los 7 módulos en monitor */
+            grid-template-columns: repeat(7, 1fr); 
+            gap: 10px;
+        }
+
+        /* --- BOTONES EN MONITOR --- */
+        .btn-modulo {
+            grid-row: 1; /* Todos a la fila 1 */
+            background-color: #ffb845;
+            border: 1px solid #000;
+            padding: 15px 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        .btn-modulo.activo {
+            background-color: #93b023; /* Color verde si está seleccionado */
+        }
+
+        /* --- SECCIONES EN MONITOR --- */
+        .mostrar {
+            display: none;
+            grid-column: 1 / -1; /* Ocupa todo el ancho (de col 1 a 7) */
+            grid-row: 2; /* Siempre aparece en la fila 2, debajo de los botones */
+            margin-top: 40px;
+            color: black;
+        }
+
+        .mostrar.activa {
+            display: block;
+        }
+
+        .colocacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .descripcion {
+            background-color: #ffb845;
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 500px;
+        }
+
+        .mostrar img {
+            max-width: 500px;
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .titlemodu {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* --- MÓVIL (EFECTO ACORDEÓN REAL) --- */
+        @media (max-width: 700px) {
+            .contenedor-modulos {
+                display: flex;
+                flex-direction: column; /* Apila todo: botón, sección, botón... */
+                gap: 5px;
+            }
+
+            .btn-modulo {
+                width: 100%;
+                font-size: 14pt;
+                padding: 12px;
+            }
+
+            .mostrar {
+                grid-column: auto; /* Anulamos el comportamiento de monitor */
+                grid-row: auto;
+                margin-top: 0;
+                margin-bottom: 10px;
+                background-color: rgba(255, 255, 255, 0.1); /* Opcional: fondo suave */
+                border-radius: 0 0 10px 10px;
+            }
+
+            .colocacion {
+                flex-direction: column; /* Imagen y texto uno sobre otro */
+                padding: 10px;
+            }
+
+            .mostrar img {
+                max-width: 100%;
+            }
+
+            .descripcion {
+                padding: 20px;
+                max-width: 100%;
+            }
+
+            .titlemodu {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="contenedor-modulos">
+        
+        <button class="btn-modulo" id="btn-bd" onclick="verSeccion('bd')">Base de Datos</button>
+        <section class="mostrar" id="bd">
+            <h1 class="titlemodu">BASES DE DATOS</h1>
+            <div class="colocacion">
+                <img src="IMG/Aula/bases.png" alt="Bases de Datos">
+                <div class="descripcion">
+                    <p>Explica cómo almacenar, organizar y consultar información de forma eficiente. Se trabaja con modelos de datos, diseño de bases de datos relacionales y el lenguaje SQL.</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn-modulo" id="btn-sis" onclick="verSeccion('sis')">Sistema</button>
+        <section class="mostrar" id="sis">
+            <h1 class="titlemodu">SISTEMAS INFORMÁTICOS</h1>
+            <div class="colocacion">
+                <img src="IMG/Aula/Sistema.png" alt="Sistemas">
+                <div class="descripcion">
+                    <p>Funcionamiento interno de los ordenadores y sistemas operativos. Instalación, configuración y mantenimiento.</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn-modulo" id="btn-prog" onclick="verSeccion('prog')">Programación</button>
+        <section class="mostrar" id="prog">
+            <h1 class="titlemodu">PROGRAMACIÓN</h1>
+            <div class="colocacion">
+                <img src="IMG/Aula/programacion.png" alt="Programación">
+                <div class="descripcion">
+                    <p>Lógica de programación y resolución de problemas. Desarrollo de aplicaciones robustas.</p>
+                </div>
+            </div>
+        </section>
+
+        <button class="btn-modulo" onclick="verSeccion('ingl')">Inglés</button>
+        <section class="mostrar" id="ingl"> <h1 class="titlemodu">INGLÉS</h1> </section>
+
+        <button class="btn-modulo" onclick="verSeccion('lg')">Lenguajes de Marcas</button>
+        <section class="mostrar" id="lg"> <h1 class="titlemodu">MARCAS</h1> </section>
+
+        <button class="btn-modulo" onclick="verSeccion('entorno')">Entorno</button>
+        <section class="mostrar" id="entorno"> <h1 class="titlemodu">ENTORNOS</h1> </section>
+
+        <button class="btn-modulo" onclick="verSeccion('ip')">Itinerario Personal</button>
+        <section class="mostrar" id="ip"> <h1 class="titlemodu">IPE</h1> </section>
+
+    </div>
+
+    <script>
+        function verSeccion(id) {
+            const target = document.getElementById(id);
+            const estaActiva = target.classList.contains('activa');
+
+            // 1. Cerramos todas las secciones y quitamos el color "activo" de los botones
+            document.querySelectorAll('.mostrar').forEach(s => s.classList.remove('activa'));
+            document.querySelectorAll('.btn-modulo').forEach(b => b.classList.remove('activo'));
+
+            // 2. Si no estaba abierta, la abrimos y marcamos el botón
+            if (!estaActiva) {
+                target.classList.add('activa');
+                // Buscamos el botón que lanzó la función para ponerle el color verde (opcional)
+                event.currentTarget.classList.add('activo');
+                
+                // 3. Scroll suave en móvil para ver el contenido
+                if (window.innerWidth <= 700) {
+                    setTimeout(() => {
+                        target.previousElementSibling.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 50);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

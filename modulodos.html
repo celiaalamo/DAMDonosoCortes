@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Proyecto 1DAM - Módulos</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="CSS/modulos.css">
+
+</head>
+
+<body>
+	<!-- Main -->
+	<div class="Menu">
+		<button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+		<nav id="nav" class="nav">
+			<button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+			<ul class="nav-list">
+				<li><a href="index.html">Inicio</a></li>
+				<li>
+					<a href="">Información</a>
+					<ul>
+						<li><a href="#informacion">¿Qué es DAM?</a></li>
+						<li><a href="index.html#modulos">Módulos</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="">Centro</a>
+					<ul>
+						<li>
+							<a href="https://iesdonosocortes.educarex.es/index.php" target="_blank">IES Donoso
+								Cortes</a>
+						</li>
+						<li><a href="index.html#profesores">Profesores</a></li>
+						<li><a href="index.html">Ciclos Relacionados</a></li>
+					</ul>
+				</li>
+				<!--	-->
+				<img class="logo" src="./IMG/Logo/Logo.svg" alt="Logo DAM" />
+				<!--	-->
+				<li>
+					<a href="index.html#juegos">Proyectos</a>
+					<ul>
+						<li>
+							<a href="index.html#Njuegos">Nuestros Juegos</a>
+							<ul>
+								<li>
+									<a href="Juegos/serpiente/index.html" target="_blank">Serpiente</a>
+								</li>
+								<li><a href="Juegos/Ahorcado/index.html">El ahorcado</a></li>
+								<li><a href="">Encuentra las parejas</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#juegosAprendizaje">Juegos de Aprendizaje</a>
+							<ul>
+								<li>
+									<a href="https://cssgridgarden.com/#es" target="_blank">Grid Garden</a>
+								</li>
+								<li>
+									<a href="http://flexboxfroggy.com/#es" target="_blank">Flexbox Froggy</a>
+								</li>
+								<li>
+									<a href="https://cssgridgarden.com/#es" target="_blank">Grid Garden</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="https://sites.google.com/iesdonosocortes.es/ladata/page?authuser=0"
+								target="_blank">LaData</a>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#opiniones">Opiniones</a></li>
+				<li><a href="#contacto">Contacto</a></li>
+			</ul>
+		</nav>
+	</div>
+
+	<!-- Botones de modulos -->
+	<div class="modulos">
+		<button onclick="verSeccion('assce')">Acceso a Datos </button>
+		<button onclick="verSeccion('DI')">Desarrollo de Interfaces</button>
+		<button onclick="verSeccion('IPEI')">IPE II</button>
+		<button onclick="verSeccion('PSP')">Programación de Servicios y Procesos</button>
+		<button onclick="verSeccion('PMD')">Programación Multimedia y Dispositivos Móviles de Marcas</button>
+		<button onclick="verSeccion('SG')">Sistemas de Gestión Empresarial Proyecto Intermodular</button>
+		<button onclick="verSeccion('PID')">
+			Proyecto intermodular de desarrollo de aplicaciones multiplataforma Personal para la
+		</button>
+		<button onclick="verSeccion('SAS')">Sostenibilidad aplicada al sistema productivo</button>
+		<button onclick="verSeccion('IAS')">Digitalización aplicada a los sectores productivos</button>
+	</div>
+
+	<!-- Secciones de Contenido -->
+	<section class="mostrar" id="assce">
+		<h1 class="titlemodu">Acceso a Datos</h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/bases.png" alt="Base de datos" />
+			<div class="descripcion">
+				<p>
+					Explica cómo almacenar, organizar y consultar información de forma
+					eficiente. Se trabaja con modelos de datos, diseño de bases de datos
+					relacionales y el lenguaje SQL para crear, modificar y consultar
+					datos.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="mostrar" id="DI">
+		<h1 class="titlemodu">Desarrollo de Interfaces</h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/Sistema.png" alt="Sistemas" />
+			<div class="descripcion">
+				<p>
+					Introduce el funcionamiento interno de los ordenadores y sistemas
+					operativos. El alumno aprende a instalar, configurar y mantener
+					sistemas, gestionar usuarios, permisos y recursos, y comprender cómo
+					se comunican los equipos en red.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="mostrar" id="IPEI">
+		<h1 class="titlemodu">IPE II</h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/programacion.png" alt="Programación" />
+			<div class="descripcion">
+				<p>
+					Desarrolla las bases de la lógica de programación y la resolución de
+					problemas. Se aprende a crear programas estructurados, trabajar con
+					funciones, estructuras de datos y aplicar buenas prácticas de
+					desarrollo.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="mostrar" id="PSP">
+		<h1 class="titlemodu">Programación de Servicios y Procesos</h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/programacion.png" alt="Inglés" />
+			<div class="descripcion">
+				<p>Crear y gestionar procesos, hilos y servicios que trabajan simultáneamente dentro de una aplicación o
+					entre varias aplicaciones.</p>
+			</div>
+		</div>
+	</section>
+	<section class="mostrar" id="PMD">
+		<h1 class="titlemodu">
+			Programación Multimedia y Dispositivos Móviles de Marcas
+		</h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/programacion.png" alt="Inglés" />
+			<div class="descripcion">
+				<p>
+					Introduce lenguajes como HTML, XML y JSON, así como herramientas
+					para estructurar, transformar y presentar información. También se
+					estudian tecnologías web básicas y sistemas de gestión de
+					contenidos.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="mostrar" id="SG">
+		<h1 class="titlemodu">Sistemas de Gestión Empresarial Proyecto Intermodular</h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/programacion.png" alt="Inglés" />
+			<div class="descripcion">
+				<p>
+					Presenta las herramientas que se utilizan en el día a día del
+					programador: IDEs, control de versiones, compiladores, depuradores y
+					metodologías de trabajo. El objetivo es aprender a trabajar de forma
+					eficiente y organizada.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="mostrar" id="PID">
+		<h1 class="titlemodu">Proyecto intermodular de desarrollo de aplicaciones multiplataforma Personal para la </h1>
+		<div class="colocacion">
+			<img src="./IMG/Aula/programacion.png" alt="Inglés" />
+			<div class="descripcion">
+				<p>
+					Presenta las herramientas que se utilizan en el día a día del
+					programador: IDEs, control de versiones, compiladores, depuradores y
+					metodologías de trabajo. El objetivo es aprender a trabajar de forma
+					eficiente y organizada.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="mostrar" id="SAS">
+		<h1 class="titlemodu">Sostenibilidad aplicada al sistema productivo</h1>
+		<div class="colocacion">
+			<img src="./IMG/JPG/theandrasbarta-europe-1264062_1280.jpg" alt="Inglés" />
+			<div class="descripcion">
+				<p>
+					Produce bienes y servicios de forma responsable, reduciendo el impacto ambiental, utilizando
+					los recursos de forma eficiente y promoviendo condiciones sociales justas.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="mostrar" id="IAS">
+		<h1 class="titlemodu">Digitalización aplicada a los sectores productivos</h1>
+		<div class="colocacion">
+			<img src="./IMG/JPG/theandrasbarta-europe-1264062_1280.jpg" alt="Inglés" />
+			<div class="descripcion">
+				<p>
+					 Usa herramientas y tecnologías	digitales para optimizar
+					  la producción, la gestión y los servicios de una empresa.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<script>
+		function verSeccion(id) {
+			const secciones = document.querySelectorAll(".mostrar");
+			secciones.forEach((s) => (s.style.display = "none"));
+			const target = document.getElementById(id);
+
+			if (target) {
+				target.style.display = "block";
+				
+				target.scrollIntoView({ behavior: "smooth" });
+			}
+		}
+
+		function revisarURL() {
+			const hash = window.location.hash.substring(1); // Quitamos el '#'
+			if (hash) {
+				verSeccion(hash);
+			}
+		}
+
+		// Ejecutar cuando carga la página por primera vez
+
+		window.addEventListener("load", revisarURL);
+
+		// Ejecutar si el usuario cambia el enlace
+
+		window.addEventListener("hashchange", revisarURL);
+	</script>
+</body>
+
+</html>

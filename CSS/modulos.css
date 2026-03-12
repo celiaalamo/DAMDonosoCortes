@@ -1,0 +1,36 @@
+nav {
+			position: relative !important;
+			height: 100%;
+			z-index: 1;
+		}
+		.mostrar {
+			display: block;
+			padding: 20px;
+
+			margin-top: 20px;
+			animation: fadeIn 0.5s;
+		}
+		.mostrar .colocacion {
+			display: flex;
+			align-items: center;
+			gap: 30px;
+			text-align: center;
+			justify-content: center;
+		}
+
+		.modulos > button {
+			margin: 20px 0;
+			text-align: center;
+			display: block;
+			position: relative;
+			width: 9%;
+		}
+
+		section > .titlemodu {
+			text-transform: uppercase !important;
+			text-align: center;
+			font-family:
+				"Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+				"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+			font-size: 50pt;
+		}
